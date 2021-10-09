@@ -26,12 +26,13 @@ h1 {
     border: 1px solid gray;
 }
 
-.o {
+.o, .x {
     position: relative;
 }
 
-.o:after {
+.o:after, .x:after {
     content: "\1F6E1";
+    /* codigo do emoji do site emojipedia */
     font-size: 50px;
     line-height: 100px;
     position: absolute;
@@ -40,17 +41,6 @@ h1 {
     /* inset é o mesmo que top, right, bottom e left */
 }
 
-.x {
-    position: relative;
-}
-
 .x:after {
-    position: absolute;
     content: "\2694";
-    font-size: 50px;
-    line-height: 100px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
