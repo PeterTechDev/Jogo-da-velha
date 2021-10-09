@@ -19,14 +19,13 @@ h1{
 }
 
 .o:after{
-    position: absolute;
     content: "\1F6E1";
     font-size: 50px;
     line-height: 100px;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+    position: absolute;
+    /* lembrando que sempre que usarmos absolute tem que mudar o el pai para relative */
+    inset: 0; 
+    /* inset é o mesmo que top, right, bottom e left */
 }
 .x{
     position: relative;
