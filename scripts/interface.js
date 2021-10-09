@@ -30,17 +30,20 @@ function updateSquare(postion) {
     square.innerHTML = `<div class='${symbol}'></div>`
 }
 
-function updateSquares() {
+// function updateSquares() {
 
-    let squares = document.querySelectorAll(".square");
+//     let squares = document.querySelectorAll(".square");
 
-    squares.forEach((square) => {
-        let postion = square.id;
-        let symbol = board[postion];
+//     squares.forEach((square) => {
+//         let postion = square.id;
+//         let symbol = board[postion];
 
-        if (symbol != '') {
-            square.innerHTML = `<div class='${symbol}'></div>`
-        }
-    })
+//         if (symbol != '') {
+//             square.innerHTML = `<div class='${symbol}'></div>`
+//         }
+//     })
 
-}
+// }
+
+// TODO: BOTÃO PARA REINICIAR O JOGO (BOARD VAZIO, GAME OVER FALSE E ETC)
+// TODO: MOSTRAR O SIMBOLOD DE QUEM GANHOU
