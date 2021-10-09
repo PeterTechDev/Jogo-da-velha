@@ -1,43 +1,56 @@
-body{
+body {
     text-align: center;
-
 }
-h1{
+
+h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.square{
+.stage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    width: 350px;
+    height: 380px;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+}
+
+.square {
     width: 100px;
     height: 100px;
     background-color: beige;
     border: 1px solid gray;
-    display: inline-block;
 }
 
-.o{
+.o {
     position: relative;
 }
 
-.o:after{
+.o:after {
     content: "\1F6E1";
     font-size: 50px;
     line-height: 100px;
     position: absolute;
     /* lembrando que sempre que usarmos absolute tem que mudar o el pai para relative */
-    inset: 0; 
+    inset: 0;
     /* inset é o mesmo que top, right, bottom e left */
 }
-.x{
+
+.x {
     position: relative;
 }
 
-.x:after{
+.x:after {
     position: absolute;
     content: "\2694";
     font-size: 50px;
     line-height: 100px;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
