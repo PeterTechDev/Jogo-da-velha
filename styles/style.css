@@ -14,14 +14,14 @@ h1 {
 
 .stage {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     justify-items: center;
     align-items: center;
+    justify-content: center;
     width: 350px;
     height: 380px;
     margin: 0 auto;
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
 }
 
 .square {
@@ -36,6 +36,7 @@ h1 {
 }
 
 .o:after, .x:after {
+    text-align: center;
     content: "\1F6E1";
     /* codigo do emoji do site emojipedia */
     font-size: 50px;
